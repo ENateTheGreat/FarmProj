@@ -3,7 +3,6 @@ public class Wheat extends Crops{
     public Wheat(
             String name,
             String growthStage,
-            String nutrientRequirements,
             String diseaseResistance,
             double waterRequirement,
             String health
@@ -11,7 +10,6 @@ public class Wheat extends Crops{
         super(
                 "Wheat" + name,
                 growthStage,
-                nutrientRequirements,
                 diseaseResistance,
                 waterRequirement,
                 health

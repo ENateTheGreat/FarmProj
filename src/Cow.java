@@ -1,18 +1,25 @@
+import java.util.Random;
+
 public class Cow extends Livestock {
-    public double milkGallonsDaily;
+    private double randomizeMilkGallons() {
+        Random random = new Random();
+        double rand = random.nextDouble(11);
+        return rand;
+    }
+
+    private double milkGallonsDaily = randomizeMilkGallons();
 
     public Cow
             (
             String animalName, int weight, double temperature, int heartRate, int respiratoryRate,
-               String activityLevel, String animalType, double milkGallonsDaily, boolean isFed, String foodType
+               String activityLevel, String animalType, boolean isFed, String foodType
     ) {
         super(animalName, weight, animalType, isFed, foodType, heartRate, respiratoryRate, activityLevel,
                 temperature);
-        this.milkGallonsDaily = milkGallonsDaily;
     }
 
-
     public void displayInfo() {
+        super.displayInfo();
         System.out.println("Gallons of Milk Produced Today:  " + this.milkGallonsDaily);
     }
 }

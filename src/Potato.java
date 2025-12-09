@@ -3,7 +3,6 @@ public class Potato extends Crops{
     public Potato(
             String name,
             String growthStage,
-            String nutrientRequirements,
             String diseaseResistance,
             double waterRequirement,
             String health
@@ -11,7 +10,6 @@ public class Potato extends Crops{
         super(
                 "Potato" + name,
                 growthStage,
-                nutrientRequirements,
                 diseaseResistance,
                 waterRequirement,
                 health

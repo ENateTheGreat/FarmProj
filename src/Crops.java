@@ -1,7 +1,6 @@
 public abstract class Crops {
     public String name;
     public String growthStage;
-    public String nutrientRequirements;
     public String diseaseResistance;
     public double waterRequirement;
     public String health;
@@ -10,14 +9,12 @@ public abstract class Crops {
     public Crops(
             String name,
             String growthStage,
-            String nutrientRequirements,
             String diseaseResistance,
             double waterRequirement,
             String health
     ) {
         this.name = name;
         this.growthStage = growthStage;
-        this.nutrientRequirements = nutrientRequirements;
         this.diseaseResistance = diseaseResistance;
         this.waterRequirement = waterRequirement;
         this.health = health;

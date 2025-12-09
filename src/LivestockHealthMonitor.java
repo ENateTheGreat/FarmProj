@@ -17,6 +17,7 @@ public class LivestockHealthMonitor
                 String food = scanner.nextLine();
                 if (food.equalsIgnoreCase(livestock.getFoodType())) {
                     feed = true;
+                    System.out.println(livestock.getAnimalName() + " has been fed " + food);
                 } else {
                     System.out.println("That is not the correct food type for this animal.");
                 }
@@ -26,7 +27,7 @@ public class LivestockHealthMonitor
         livestock.setIsFed(feed);
     }
 
-    public void checkHealth(Livestock livestock) {
+    public void checkHealth() {
         int strikes = 0;
         if (Objects.equals(livestock.activityLevel, "low") || Objects.equals(livestock.activityLevel, "medium")) {
             strikes = strikes + 1;
